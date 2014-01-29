@@ -36,7 +36,7 @@ html {
 }
 body {
     padding: 2rem;
-    font-family: Menlo, Monaco, monospace;
+    font-family: Verdana;
     font-size: 1.4rem;
     line-height: 1.5;
     color: #666;
@@ -54,10 +54,16 @@ h1, h2, h3 {
     color: #111;
     text-rendering: optimizeLegibility;
 }
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2.1rem;
+}
 h1:before, h2:before, h3:before {
     position: absolute;
     top: auto;
-    color: #ccc;
+    color: #777;
     display: none;
 }
 h1:before {
@@ -81,10 +87,10 @@ b, strong {
     color: #333;
 }
 b:before, b:after, strong:before, strong:after {
-    content: "*";
+    /*content: "*";*/
 }
 i:before, i:after, em:before, em:after {
-    content: "/";
+    /*content: "/";*/
 }
 hr {
     /* margin: 0; */
@@ -95,7 +101,7 @@ hr:after {
     display: block;
     /* margin: 2rem 0; */
     content: "----------------------------------------------------------------";
-    color: #ccc;
+    color: #777;
 }
 ul, ol {
     padding: 0;
@@ -108,8 +114,8 @@ code {
     color: #d14;
 }
 code:before, code:after {
-    content: "=";
-    color: #ccc;
+    /*content: "=";*/
+    /*color: #777;*/
 }
 pre {
     display: block;
@@ -172,7 +178,7 @@ table th.right, table td.right {
 /* body */
 .container {
     margin: 0 auto;
-    max-width: 77rem;
+    max-width: 85rem;
 }
 /* head */
 .masthead {
@@ -182,7 +188,7 @@ table th.right, table td.right {
     display: block;
     content: '----------------------------------------------------------------';
     margin: 1rem 0;
-    color: #ccc;
+    color: #777;
 }
 .masthead a {
     color: #333;
@@ -196,7 +202,7 @@ table th.right, table td.right {
 .masthead li + li:before {
     display: inline-block;
     content: "\00B7 \00a0";
-    color: #ccc;
+    color: #777;
 }
 /* searchform*/
 #searchform {
@@ -236,7 +242,7 @@ table th.right, table td.right {
 .post:after {
     display: block;
     content: "----------------------------------------------------------------";
-    color: #ccc;
+    color: #777;
 }
 .post img {
     max-width: 100%;
@@ -247,7 +253,7 @@ table th.right, table td.right {
 .post ul > li:before {
     content: "- ";
     margin-left: -1.25em;
-    color: #ccc;
+    color: #777;
 }
 .post ol {
     counter-reset: o-list;
@@ -256,7 +262,7 @@ table th.right, table td.right {
     content: counter(o-list) ") ";
     counter-increment: o-list;
     margin-left: -1.85em;
-    color: #ccc;
+    color: #777;
 }
 /* meta info */
 .post-info {
@@ -271,7 +277,7 @@ table th.right, table td.right {
     content: "----------------------------------------------------------------";
     display: block;
     margin-top: -1.5rem;
-    color: #ccc;
+    color: #77777
 }
 .footer {
     margin: 8rem 0 0;

@@ -96,6 +96,8 @@ render from a default hash table."
               (sort (remove-if
                      #'(lambda (cat)
                          (or (string= cat "index")
+                             (string= cat ".themes")
+                             (string= cat ".config")
                              (string= cat "about")))
                      (op/get-file-category nil))
                     'string-lessp)))
